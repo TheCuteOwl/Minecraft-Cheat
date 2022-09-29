@@ -3,6 +3,9 @@
 
 * Autoclicker and Triggerbot actually avaible
 
+* Next Update will add :
+* Way to change CPS
+
 ![plot](./Image/Capture.PNG)
 
 -----
