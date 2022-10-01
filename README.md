@@ -33,6 +33,7 @@ It's not good but better that some python cheat on Github
 
 * ***Please use this program only for educational purposes.***
 * ***It is not meant to be used in any malicious way, and I decline any responsibility for what you do with it.***
+* ***If you get banned or something else it will be your fault.***
 
 <br><br>
 * Want to support me ? Leave a star ⭐ 
