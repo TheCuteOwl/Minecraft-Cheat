@@ -24,7 +24,6 @@ It's not good but better that some python cheat on Github
 
 * <a href="https://pypi.org/project/PyAutoGUI/">PyAutoGui</a>
 * <a href="https://pypi.org/project/keyboard/">Keyboard</a>
-* <a href="https://github.com/billythegoat356/pystyle">PyStyle</a>
 * <a href="https://pypi.org/project/Pillow/">Pillow</a>
 * Some other that are already installed
 ---
