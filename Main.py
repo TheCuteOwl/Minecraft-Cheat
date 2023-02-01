@@ -9,13 +9,13 @@ import subprocess
 import time
 
 def firstlaunchings():
-    print(Colorate.Horizontal(Colors.blue_to_red, Box.DoubleCube(''
+    print((Colors.blue_to_red, Box.DoubleCube(''
                                                                  'We notice'
                                                                  ' this is the first time you launch the program')))
-    print(Colorate.Horizontal(Colors.green_to_yellow, Box.DoubleCube('''What do you prefer ? : ''')))
-    print(Colorate.Horizontal(Colors.green_to_yellow, 'Color One [1]'))
-    print(Colorate.Horizontal(Colors.blue_to_red, 'Color Two [2]'))
-    print(Colorate.Horizontal(Colors.green_to_black, 'Color Three (Hard to see sometimes [3]'))
+    print((Colors.green_to_yellow, Box.DoubleCube('''What do you prefer ? : ''')))
+    print((Colors.green_to_yellow, 'Color One [1]'))
+    print((Colors.blue_to_red, 'Color Two [2]'))
+    print((Colors.green_to_black, 'Color Three (Hard to see sometimes [3]'))
     choose = input('Choose : ')
     if choose == '1':
         with open('data.txt', 'w', encoding="utf-8") as e:
@@ -46,16 +46,6 @@ Keybinding = '''
     TriggerBot  | F | Enabled
     TriggerBot  | G | Disabled'''
 
-with open("data.txt", mode='r', encoding="utf-8") as z:
-    TextColor = z.readline()
-    if TextColor == 'Colors':
-        TextColor = Colors.green_to_yellow
-    elif TextColor == 'Colorss':
-        TextColor = Colors.blue_to_red
-    elif TextColor == 'Colorsss':
-        TextColor = Colors.green_to_black
-    else:
-        print('Nope')
 
 print('\n' * 100)
 
@@ -88,16 +78,16 @@ Banner5 = '''
 PRESS N FOR Help
 FOR THE TRIGGERBOT YOU NEED TO USE LUNAR AND MAKE THE CROSSHAIR RED WHILE LOOKING TO A ENNEMY'''
 
-print(Colorate.Diagonal(TextColor, Center.XCenter(Banner5 + '\n\n')))
+print(Banner5 + '\n\n')
 while i < n:
 
     if keyboard.is_pressed('N'):
-        print(Colorate.Diagonal(TextColor, Center.XCenter(Keybinding + '\n\n')))
+        print (Keybinding + '\n\n')
         time.sleep(1)
 
     if keyboard.is_pressed('h'):
         var = autoclicker = 1
-        print(Colorate.Diagonal(TextColor, 'Autoclicker Enabled'))
+        print('Autoclicker Enabled')
         module = 1
         ctypes.windll.kernel32.SetConsoleTitleW("Minecraft Is Good | Autoclicker Enabled | https://github.com/TheCuteOwl")
         while autoclicker == 1:
@@ -108,12 +98,12 @@ while i < n:
                     module = 0
                     ctypes.windll.kernel32.SetConsoleTitleW("Minecraft Is Good | Autoclicker Disabled | https://github.com/TheCuteOwl")
                     var2 = autoclicker = 0
-                    print(Colorate.Diagonal(TextColor, 'Autoclicker Disabled'))
+                    print('Autoclicker Disabled')
                     i = 2
                     break
     elif keyboard.is_pressed('f'):
         var3 = triggerbot = 1
-        print(Colorate.Diagonal(TextColor, 'Triggerbot Enabled'))
+        print('Triggerbot Enabled')
         module = 1
         ctypes.windll.kernel32.SetConsoleTitleW("Minecraft Is Good | Triggerbot Enabled | https://github.com/TheCuteOwl")
         while triggerbot == 1:
@@ -128,5 +118,5 @@ while i < n:
                     module = 0
                     ctypes.windll.kernel32.SetConsoleTitleW("Minecraft Is Good | Triggerbot Disabled | https://github.com/TheCuteOwl")
                     var4 = triggerbot = 0
-                    print(Colorate.Diagonal(TextColor, 'Triggerbot Disabled'))
+                    print('Triggerbot Disabled')
                     break
